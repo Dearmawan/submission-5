@@ -1,4 +1,4 @@
-# Proyek ETL Pipeline yang Keren Abis! 🚀
+# Proyek ETL Pipeline! 🚀
 
 Selamat datang di proyek ETL (Extract, Transform, Load) super kece yang dibuat dengan Python! Proyek ini bakal nyanyi sambil ngambil data dari website, ngedit data biar ciamik, lalu nyanyi lagi sambil menyimpan ke CSV, Google Sheets, dan PostgreSQL. Siap-siap terpukau! 😺🎉
 
@@ -22,24 +22,11 @@ Semua dikomando oleh `main.py` dengan penanganan error yang super tangguh! 🦄�
   pip install pandas psycopg2-binary gspread oauth2client
   ```
 - Database PostgreSQL (`companydb`) dengan detail login:
-  - Username: `postgres`
+  - Username: `*****`
   - Password: ******** (rahasia dong! 😜)
   - Host: `localhost`
   - Port: `5432`
 - File kredensial Google Sheets API (`google-sheets-api.json`) biar bisa nyanyi bareng Google Sheets.
-
-## Struktur Proyek
-
-```
-proyek/
-├── main.py                  # Komandan utama pipeline ETL
-├── utils/
-│   ├── extract.py           # Jagoan ekstraksi data
-│   ├── transform.py         # Penata data biar kece
-│   └── load.py              # Penyanyi yang nyanyi ke CSV, Sheets, & Postgres
-├── google-sheets-api.json   # Kunci ajaib buat Google Sheets
-└── products.csv             # Hasil karya CSV yang ciamik
-```
 
 ## Cara Nyalain Pipeline Ini
 
@@ -101,12 +88,3 @@ Ubah pengaturan di `main.py` sesuai selera:
 - Pastiin Google Sheets API aktif dan akun servis punya akses ke spreadsheet.
 - Database `companydb` harus udah dibuat sebelum nyanyi.
 - Modul `utils` diasumsikan punya fungsi kece (`scrape_data`, `transform_data`, `load_to_csv`, dll).
-
-## Rencana Masa Depan
-
-- Tambah log biar debug makin asyik.
-- Kasih fitur nyanyi ulang kalau API/database gagal.
-- Dukung lebih banyak sumber dan tujuan data.
-- Bikin tes biar `utils` makin mantap.
-
-Ayo nyanyi bareng pipeline ETL ini! 🦒🎊
